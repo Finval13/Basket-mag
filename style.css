@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(231, 226, 226);
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.basket {
+  background-color: white;
+  border-radius: 20px;
+  width: 30%;
+  height: 50%;
+  border: 1px solid grey;
+  text-align: center;
+  padding: 30px;
+  font-size: 18px;
+}
+
+.basket > ul {
+  margin-top: 10px;
+  border-top: 1px solid black;
+  min-height: 70px;
+  border-bottom: 1px solid black;
+  list-style-type: none;
+}
+.basket > button {
+  width: 303px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #f9b300;
+  color: white;
+  border: none;
+}
+
+.product {
+  width: 200px;
+  min-height: 350px;
+  background-image: url(./img/image\ 22.png);
+  background-repeat: no-repeat;
+  background-position: 20px 30px;
+  background-size: 155px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.product__info > button {
+  background-color: #f9b300;
+  width: 112px;
+  height: 30px;
+  color: white;
+  font-size: 11px;
+  line-height: 13px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.product__web {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.product__info {
+  text-align: center;
+}
+
+.product__info > p:first-child {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.product__info > p:nth-child(2) {
+  font-size: 20px;
+}
+
+li {
+  background-image: url(./img/image\ 22.png);
+  background-position: 25px;
+  background-size: 35px;
+  background-repeat: no-repeat;
+  font-size: 20px;
+}
+
+li > button {
+  border-radius: 5px;
+  border: none;
+  padding: 3px;
+  background-color: black;
+  width: 7%;
+  color: white;
+  position: relative;
+  right: 50%;
+  top: -30px;
+}
+.quantity-controls button {
+  background-color: #f9b300;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  margin: 0 5px;
+}
+
+#empty-cart-message {
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  top: -50px;
+}
